@@ -22,12 +22,5 @@ namespace IlinkedList
         Node FindNode(int searchValue); // ищет элемент по его значению
     }
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
-
  
 }

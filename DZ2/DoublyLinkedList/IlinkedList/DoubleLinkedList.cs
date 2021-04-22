@@ -8,9 +8,9 @@ namespace IlinkedList
 {
     public class LinkedList : ILinkedList
     {
-        public Node _startNode { get; set; }
-        public Node _endNode { get; set; }
-        public int _count { get; set; }
+         Node _startNode { get; set; }
+         Node _endNode { get; set; }
+         int _count { get; set; }
         public void AddNode(int value)
         {
             var node = new Node { Value = value };
