@@ -9,7 +9,7 @@ namespace Test_BinarTree
         TreeList tree;
         
         [SetUp]
-        public void Setup() // Добавление элементов 
+        public void Setup() // Add Item
         {
             tree = new TreeList();
             tree.AddItem(33);
@@ -23,7 +23,7 @@ namespace Test_BinarTree
         }
 
         [Test]
-        public void GetNodeItem_Test1() // тест на поиск в левое части звена
+        public void GetNodeItem_Test1() // Link search test 1
 
         {
             tree.GetNodeByValue(20);
@@ -35,7 +35,7 @@ namespace Test_BinarTree
             Assert.AreEqual(expected, actual);
         }
         [Test]
-        public void GetNodeItem_Test2() //тест на поиск правого звена 
+        public void GetNodeItem_Test2() // Link search test 2
         {
             tree.GetNodeByValue(40);
             
@@ -50,7 +50,7 @@ namespace Test_BinarTree
            
         } 
         [Test]
-        public void RemoveItem_Test1() //тест на удаление корня
+        public void RemoveItem_Test1() //Root removal Test
         {
             tree.RemoveItem(33);
 
@@ -60,7 +60,7 @@ namespace Test_BinarTree
             Assert.AreEqual(expected, actual);
         }
         [Test]
-        public void RemoveItem_Test2()//тест  на удаление узла имеющий и правый и левый узел
+        public void RemoveItem_Test2()//Test for deleting a node that has a left and right child
         {
             tree.RemoveItem(20);
 
@@ -71,7 +71,7 @@ namespace Test_BinarTree
         }
        
         [Test]
-        public void RemoveItem_Testу3()// тест на удаление узла не имещий узлов
+        public void RemoveItem_Testу3()// Test for deleting a node that has no descendants
         {
             tree.RemoveItem(25);
 
